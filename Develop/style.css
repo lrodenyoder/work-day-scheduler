@@ -14,6 +14,7 @@ textarea{
   width: 100%;
   max-width: 100%;
   min-width: 100px;
+  line-height: 1.2;
 }
 
 .jumbotron {
@@ -22,6 +23,11 @@ textarea{
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+}
+
+time {
+  padding: 0;
+  margin: 0;
 }
 
 .description{
@@ -34,7 +40,7 @@ textarea{
 }
 
 .row {
-  white-space: pre-wrap;
+  /* white-space: pre-wrap; */
   height: 80px;
   border-top: 1px solid white;;
 }
