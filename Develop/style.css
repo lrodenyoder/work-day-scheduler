@@ -68,7 +68,7 @@ time {
   color: white;
 }
 
-.saveBtn {
+.saveBtn1, .saveBtn2, .saveBtn3 {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -76,7 +76,7 @@ time {
   color: white;
 }
 
-.saveBtn i:hover {
+.saveBtn1 i:hover, .saveBtn2 i:hover, .saveBtn3 i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
