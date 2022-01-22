@@ -2,6 +2,7 @@
 var todayDate = moment().format("dddd LL");
 //current hour in 24hr format
 var currentTime = moment().format("H");
+console.log(currentTime);
 //array to hold each hour of the scheduler
 var textAreaArray = $(".description");
 
