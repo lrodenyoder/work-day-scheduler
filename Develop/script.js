@@ -14,8 +14,13 @@ $("#currentDay").html(todayDate);
 var auditTime = function () {
   //loop through the textarea array variable
   for (var i = 0; i < textAreaArray.length; i++) {
+    
     //get the id for each textarea
     var TimeID = textAreaArray[i].id;
+    //change to number value
+    TimeID = parseInt(TimeID)
+    //change current time to number value
+    currentTime = parseInt(currentTime);
 
     //get the textarea as a variable
     var textareaEl = document.getElementById(textAreaArray[i].id);
@@ -25,10 +30,13 @@ var auditTime = function () {
 
     //add class depending on the comparison of assigned hour ID and current hour in 24hr format
     if (TimeID < currentTime) {
+     
       $(textareaEl).addClass("past");
     } else if (TimeID > currentTime) {
+      
       $(textareaEl).addClass("future");
     } else {
+      
       $(textareaEl).addClass("present");
     }
   }
@@ -36,7 +44,7 @@ var auditTime = function () {
 
 var loadEvents = function () {
   var nine = localStorage.getItem("9am");
-  $("#09").html(nine);
+  $("#9").html(nine);
   var ten = localStorage.getItem("10am");
   $("#10").html(ten);
   var eleven = localStorage.getItem("11am");
@@ -104,4 +112,4 @@ $(".saveBtn9").on("click", function () {
 loadEvents();
 
 //run auditTime every 5 minutes
-setInterval(auditTime(), 1000 * 60 * 5);
+setInterval(auditTime(), (1000 * 60) * 5);
