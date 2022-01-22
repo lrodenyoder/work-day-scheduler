@@ -25,6 +25,10 @@ textarea{
   border-bottom: 10px solid black;
 }
 
+.container {
+  margin-bottom: 10px;
+}
+
 time {
   padding: 0;
   margin: 0;
@@ -68,7 +72,7 @@ time {
   color: white;
 }
 
-.saveBtn1, .saveBtn2, .saveBtn3 {
+.saveBtn1, .saveBtn2, .saveBtn3, .saveBtn4, .saveBtn5, .saveBtn6, .saveBtn7, .saveBtn8, .saveBtn9 {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -76,7 +80,7 @@ time {
   color: white;
 }
 
-.saveBtn1 i:hover, .saveBtn2 i:hover, .saveBtn3 i:hover {
+.saveBtn1 i:hover, .saveBtn2 i:hover, .saveBtn3 i:hover, .saveBtn4 i:hover, .saveBtn5 i:hover, .saveBtn6 i:hover, .saveBtn7 i:hover, .saveBtn8 i:hover, .saveBtn9 i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
